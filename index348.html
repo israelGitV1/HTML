@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        background: blue;
+      }
+      .img-in-text {
+        width: 500px;
+        height: 500px;
+      }
+      del {
+        font-size: 19px;
+      }
+      ins {
+        font-size: 19px;
+      }
+      .SpanVermelho {
+        color: red;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="background: red">Cabeçalho</h1>
+    <h1>Cabeçalho</h1>
+    <p>
+      <b>Lorem ipsum dolor</b> <i>adipisicing</i> adipisicing elit. Alias et aut
+      incidunt molestiae eveniet consequatur sunt minima optio dicta ab, nulla
+      autem, ducimus rerum quaerat earum veritatis odit impedit dolor.
+      <a href="https://pt.wikipedia.org/wiki/Lorem_ipsum" target="blank">
+        <img
+          class="img-in-text"
+          src="https://img.freepik.com/vetores-gratis/vetor-de-gradiente-de-logotipo-colorido-de-passaro_343694-1365.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1725148800&semt=ais_hybrid"
+          alt="Lorem Logo Imagem"
+        />
+      </a>
+      <a
+        href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/strong"
+        target="_blank"
+        >Elementos Html "strong"
+      </a>
+    </p>
+
+    <p>
+      <strong>Lorem</strong> <em>ipsum</em> ipsum dolor sit amet consectetur<br />
+      <del>Vermelho</del> <ins>Azul</ins> <br />adipisicing elit. Alias et aut
+      <s>incidunt</s>incidunt <u>molestiae</u> eveniet consequatur sunt minima
+      optio dicta ab, nulla autem, ducimus rerum quaerat earum veritatis odit
+      impedit dolor.
+    </p>
+
+    <p>
+      <small> Nobis </small>
+      2<sup>2</sup> <br />
+      H<sub>2</sub>O <br />
+      <q>Cumquel</q>
+    </p>
+    <hr />
+    <blockquote
+      cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/strong"
+    >
+      <p>Aqui sim eu estou fazendo um bloco de citação.</p>
+      <pre>
+        <code>
+          <span class="SpanVermelho" >const</span> myHeading = document.querySelector("h1");
+          myHeading.textContent = "Olá mundo!";
+        </code>
+      </pre>
+    </blockquote>
+
+    <div class="SpanVermelho">Eu sou um bloco.</div>
+  </body>
+</html>
