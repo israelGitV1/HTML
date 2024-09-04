@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      table {
+        border-collapse: collapse;
+        width: 800px;
+      }
+      table td,
+      table th {
+        border: 1px solid #ccc;
+        padding: 5px;
+        text-align: left;
+      }
+      table caption {
+        caption-side: top;
+        text-align: left;
+        font-style: italic;
+        margin: 0 0 0 5px;
+      }
+      tfoot td {
+        background: #ddd;
+      }
+      .responsive-table {
+        max-width: 100%;
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo facilis fugit
+      dignissimos doloremque, accusantium autem odio totam nihil magnam? Minus
+      error itaque temporibus eos nesciunt quaerat vero natus quod aliquid.
+    </p>
+    <div class="responsive-table">
+      <table>
+        <caption>
+          Uma descrição para a tebela
+        </caption>
+        <thead>
+          <tr>
+            <th>Título 1</th>
+            <th>Título 2</th>
+            <th>Título 3</th>
+            <th>Título 4</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="2">Aqui</td>
+            <td>corpo 3</td>
+            <td>corpo 4</td>
+          </tr>
+          <tr>
+            <td rowspan="2">corpo 1</td>
+            <td>corpo 2</td>
+            <td>corpo 3</td>
+            <td>corpo 4</td>
+          </tr>
+          <tr>
+            <td>corpo 2</td>
+            <td>corpo 3</td>
+            <td>corpo 4</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td rowspan="2"></td>
+            <td rowspan="2" colspan="2"></td>
+            <td>Total:</td>
+          </tr>
+          <tr>
+            <td>R$: Valor</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
