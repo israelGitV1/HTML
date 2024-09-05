@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width , initial-scale=1.0" />
     <title>Document</title>
     <style>
+      * {
+        box-sizing: border-box;
+      }
       body {
         font-family: sans-serif;
       }
       table {
         border-collapse: collapse;
-        width: 800px;
+        width: 600px;
       }
       table td,
       table th {
@@ -20,7 +23,7 @@
       }
       table caption {
         caption-side: top;
-        text-align: left;
+        text-align: start;
         font-style: italic;
         margin: 0 0 0 5px;
       }
@@ -30,6 +33,11 @@
       .responsive-table {
         max-width: 100%;
         overflow-x: auto;
+      }
+      p {
+        border-style: solid;
+        border-width: 2px;
+        border-right: 2px;
       }
     </style>
   </head>
@@ -82,5 +90,6 @@
         </tfoot>
       </table>
     </div>
+    <p>Borda</p>
   </body>
 </html>
