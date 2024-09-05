@@ -1,0 +1,18 @@
+* {
+  border: 1px solid rgb(31, 14, 101);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+
+.pai h1 + p {
+  color: red;
+}
+.pai p + h1 {
+  color: blue;
+}
+
+.pai2 h1 ~ p {
+  color: blueviolet;
+}
