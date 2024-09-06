@@ -1,0 +1,24 @@
+ul li {
+  border: 1px solid black;
+}
+.ex1 ul li:nth-child(odd) {
+  background: blue;
+  color: wheat;
+}
+
+.ex2 ul li:nth-child(even) {
+  background: blue;
+  color: wheat;
+}
+
+.ex3 ul li:nth-child(2) {
+  background: green;
+}
+
+.ex4 ul li:nth-child(3n) {
+  background: blueviolet;
+}
+.ex5 ul li:nth-child(3n + 5) {
+  background: rgb(15, 22, 95);
+  color: white;
+}

@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  border: 1px solid black;
+}
+
+div {
+  width: 100%;
+  align-items: center;
+}
+
+[meu-atributo~="outro1"] {
+  color: rgb(6, 118, 107);
+}
+[meu-atributo^="comecou"] {
+  color: red;
+}
+[meu-atributo$="terminaCom"] {
+  color: blue;
+}
+[meu-atributo*="k"] {
+  color: blueviolet;
+}
+
+input[type="checkbox"]:checked {
+  background-color: red;
+}
+input {
+  width: 15px;
+  height: 15px;
+  background-image: none;
+  display: inline-block;
+}
+input[type="checkbox"]:hover {
+  background-color: rgb(60, 15, 165);
+  width: 15px;
+  height: 15px;
+}
+
+.heading {
+  transition: all 1s ease-in-out;
+}
+
+.heading:hover {
+  background-color: red;
+}
