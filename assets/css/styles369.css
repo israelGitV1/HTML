@@ -1,0 +1,70 @@
+#texto {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.ex1 #texto {
+  color: blue;
+}
+
+.ex1 .p {
+  color: initial;
+}
+
+.ex2 div {
+  border: 2px solid rgb(14, 11, 11);
+}
+
+.menu {
+  height: 50px;
+  background: rgb(198, 144, 8);
+}
+.ex2 p {
+  color: white;
+  font-size: larger;
+  padding: 0 10px;
+  width: 50px;
+}
+.ex2 .menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.ex2 .menu ul {
+  display: flex;
+  list-style: none;
+  font-family: sans-serif;
+}
+
+.ex2 .menu li {
+  flex-grow: 1;
+  background: rgb(198, 144, 8);
+  border-left: 2px solid white;
+  padding: 0 5px;
+}
+.ex2 .menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.ex2 .menu li:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.intro {
+  height: 70vh;
+}
+.conteudo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+.conteudo div {
+  width: 150px;
+  height: 150px;
+}
+.contato {
+  height: 70vh;
+}
