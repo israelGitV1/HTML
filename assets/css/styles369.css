@@ -10,6 +10,11 @@
   color: initial;
 }
 
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
 .ex2 div {
   border: 2px solid rgb(14, 11, 11);
 }
@@ -18,7 +23,7 @@
   height: 50px;
   background: rgb(198, 144, 8);
 }
-.ex2 p {
+.ex2 .menu > p {
   color: white;
   font-size: larger;
   padding: 0 10px;
@@ -42,7 +47,7 @@
   border-left: 2px solid white;
   padding: 0 5px;
 }
-.ex2 .menu li a {
+.ex2 .menu li > a {
   color: white;
   text-decoration: none;
 }
@@ -59,11 +64,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: 100vh;
 }
-.conteudo div {
-  width: 150px;
-  height: 150px;
+.conteudo > div {
+  width: 50%;
+  height: 30%;
 }
 .contato {
   height: 70vh;
