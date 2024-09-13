@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        font-size: 62.5%;
+      }
+
+      h1 {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 6rem;
+        text-transform: uppercase;
+      }
+      h2 {
+        font-size: 5.5rem;
+      }
+      h3 {
+        font-size: 5rem;
+      }
+      h4 {
+        font-size: 4.5rem;
+      }
+      h5 {
+        font-size: 4rem;
+      }
+      h6 {
+        font-size: 4.5rem;
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+      }
+      .divMain {
+        max-width: 1200px;
+        margin: 0 auto;
+        font-size: 1.6rem;
+      }
+      .grid {
+        display: grid;
+        width: 100%;
+        margin: 0 auto;
+        grid-template-areas: "head head" "nav main" "foot foot";
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 150px 1fr;
+        color: white;
+      }
+
+      .grid > div:nth-child(1) {
+        max-width: 1200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30px;
+        background: rgb(29, 29, 189);
+        grid-area: head;
+      }
+      .grid > div:nth-child(2) {
+        background: rgb(53, 53, 205);
+        grid-area: nav;
+      }
+      .grid > div:nth-child(3) {
+        background: rgb(63, 63, 155);
+        padding: 40px;
+        grid-area: main;
+      }
+      .grid > div:nth-child(4) {
+        background: rgb(53, 53, 205);
+        grid-area: foot;
+        padding: 0 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="divMain">
+      <div class="grid">
+        <div>
+          <h3>Whereas</h3>
+          <nav>Menu</nav>
+        </div>
+        <div>
+          <nav>
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Item 4</li>
+              <li>Item 5</li>
+              <li>Item 6</li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <h1>Whereas</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
+            consectetur provident, quod ipsum porro aliquam? Dolorem,
+            perspiciatis dolore! Deserunt et mollitia fugiat beatae laboriosam
+            repudiandae rerum recusandae debitis sequi iure.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
+            consectetur provident, quod ipsum porro aliquam? Dolorem,
+            perspiciatis dolore! Deserunt et mollitia fugiat beatae laboriosam
+            repudiandae rerum recusandae debitis sequi iure.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
+            consectetur provident, quod ipsum porro aliquam? Dolorem,
+            perspiciatis dolore! Deserunt et mollitia fugiat beatae laboriosam
+            repudiandae rerum recusandae debitis sequi iure.
+          </p>
+        </div>
+        <div>
+          <h2>Contato</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
